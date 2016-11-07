@@ -1,0 +1,46 @@
+notes
+
+use GV for things you need to keep track of for a long time, like score.
+use LV for the other stuff.
+
+
+Model
+
+ball_y = 100
+
+
+View  ( called by draw() )
+
+docuement.getElementById("ball").style.top, = ball_y + "px";
+document.getElementById("p1_score").innerHTML = p1_score + " points";
+
+
+Controller
+
+update();
+
+
+
+
+// No
+
+ball_y = parseInt(document.getElementById("ball").style.top, 10);
+
+
+Primitives --pass by value or pass by copy.
+(don't have methods but they can be AutoBoxed into and out of 
+			an object to be operated on)
+	boolean
+	string
+	number
+
+Compound Types -- pass by reference
+	array
+	function
+	object
+	regexp
+
+	
+
+
+

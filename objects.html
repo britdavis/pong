@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	<script>
+		var myObj = { 
+			// key : value,
+			name : "erty",
+			role : "teacher",
+			coffee : true,
+			markers: 5,
+			teach: function() {
+				console.log("I am teaching, woo!");
+			}
+		};
+
+		var myKey = "name";
+
+		console.log(myObj.name); // erty
+		console.log(myObj["name"]);
+		console.log(myObj.[myKey]);
+
+		myObj.teach(); // console logs "I am teaching, woo"
+
+		myOjb.favoriteFood = "Spaghetti"; // this is not defined, but it will add to the object
+
+		console.log(myObj.favoriteFood); // spaghetti
+
+		delete myObj.favoriteFood;
+
+		console.log(myObj.favoriteFood); // undefined
+
+
+		// Declaring objects
+
+		// Object litreal
+
+			var a = {
+				b : 4,
+			}
+
+			// Object creation function
+
+			function createPaddle(x, y) {
+				return {
+					x_pos: x;
+					y_pos: y,
+
+				}
+			}
+
+			var leftPaddle = createPaddle(100,50);
+			console.log(leftPaddle.x_pos);
+
+			// Constructor Function
+
+			function Paddle(x, y) {
+				this.x_pos = x;
+				this.y_pos = y;
+			}
+
+			var leftPaddle = new Paddle(100, 50);
+			console.log(leftPaddle.x_pos);
+
+
+
+
+ // objects are not good for iterating
+ // 
+
+
+ 	arr = 3;
+ 	shift
+
+ 	arr = []
+ 	arr2 = arr.slice // this copies the array
+
+
+	</script>
+</body>
+</html>
